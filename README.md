@@ -16,7 +16,8 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
 ```
 非常的不方便，一些简单的效果要写很多代码
 
-###使用UIViewController+YINNav的代码：
+##使用UIViewController+YINNav可以极大简化代码
+例子：设置背景颜色
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
