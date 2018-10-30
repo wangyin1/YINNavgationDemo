@@ -18,10 +18,6 @@
 
 /**
  控制屏幕方向 
- 在appdelegate 实现
- - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-        return  [[[NSUserDefaults standardUserDefaults] objectForKey:@"orientation"] integerValue];
- }
  */
 @property(nonatomic,assign)UIInterfaceOrientationMask  y_screenOrientation;
 

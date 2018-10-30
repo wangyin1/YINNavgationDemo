@@ -55,7 +55,7 @@
 
 - (void)y_viewDidAppear:(BOOL)animated{
      if (![self isKindOfClass:[UINavigationController class]]&&self.navigationController) {
-         [[NSUserDefaults standardUserDefaults] setObject:@(self.y_screenOrientation) forKey:@"orientation"];
+
          NSNumber *orientationTarget = [NSNumber numberWithInt:self.y_screenOrientation== UIInterfaceOrientationMaskLandscapeLeft?UIInterfaceOrientationLandscapeLeft:(self.y_screenOrientation==UIInterfaceOrientationMaskLandscapeRight?UIInterfaceOrientationLandscapeRight:UIInterfaceOrientationPortrait)];
          [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
          
@@ -67,7 +67,7 @@
     if (![self isKindOfClass:[UINavigationController class]]&&self.navigationController) {
 
         NSNumber *orientationTarget = [NSNumber numberWithInt:self.y_screenOrientation== UIInterfaceOrientationMaskLandscapeLeft?UIInterfaceOrientationLandscapeLeft:(self.y_screenOrientation==UIInterfaceOrientationMaskLandscapeRight?UIInterfaceOrientationLandscapeRight:UIInterfaceOrientationPortrait)];
-        [[NSUserDefaults standardUserDefaults] setObject:@(self.y_screenOrientation) forKey:@"orientation"];
+        
         [[UIDevice currentDevice] setValue:orientationTarget forKey:@"orientation"];
         [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         [self.navigationController.navigationBar setShadowImage:[UIImage new]];
