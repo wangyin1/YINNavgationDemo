@@ -82,7 +82,7 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
     self.y_popController = [[YINNavAlphaViewController alloc] init];
 }
 ```
-#####设置页面方向
+##### 设置页面方向
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
