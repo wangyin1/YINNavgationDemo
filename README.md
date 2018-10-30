@@ -1,4 +1,4 @@
-# YINNavgationDemo
+# UIViewController+YINNav
 runtime实现导航栏封装，无需继承，动态提供属性控制导航栏样式
 在我们使用系统api开发时。常规的，如果只有其中几个页面导航栏样式不同，局部设置必须遵循一个原则："进入页面时修改，离开页面时还原”。
 比如我们进入一个页面，需要设置当前导航栏的背景色为灰色，使用如下方法：
@@ -14,7 +14,9 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
 }
 ```
-使用UIViewController+YINNav的代码：
+非常的不方便，一些简单的效果要写很多代码
+
+###使用UIViewController+YINNav的代码：
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
