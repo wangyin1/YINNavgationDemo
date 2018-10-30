@@ -16,7 +16,7 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
 ```
 非常的不方便，一些简单的效果要写很多代码
 
-##使用UIViewController+YINNav可以极大简化代码
+## 使用UIViewController+YINNav可以极大简化代码
 例子：设置背景颜色
 ```
 - (void)viewDidLoad {
@@ -25,7 +25,7 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
 }
 ```
 当页面返回时自动设置导航栏为即将显示的controller配置。
-#####透明度渐变效果
+##### 透明度渐变效果
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -38,14 +38,14 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
     self.y_navBarAlpha = 0.999-(scrollView.contentOffset.y/400.f);
 }
 ```
-#####设置导航栏背景颜色
+##### 设置导航栏背景颜色
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.y_navBarBgColor = [UIColor orangeColor];
 }
 ```
-#####设置导航栏背景图 
+##### 设置导航栏背景图 
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,28 +53,28 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
     self.y_navBarBgImg = [UIImage imageNamed:@"app2"];
 }
 ```
-#####设置导航栏大标题
+##### 设置导航栏大标题
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.y_largeTitleMode = YES;
 }
 ```
-#####设置导航栏隐藏
+##### 设置导航栏隐藏
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.y_navBarHidden = YES;
 }
 ```
-#####设置导航栏细线
+##### 设置导航栏细线
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
     self. y_navLineHidden = YES;
 }
 ```
-#####代码控制返回页面
+##### 代码控制返回页面
 ```
 - (void)viewDidLoad {
     [super viewDidLoad];
