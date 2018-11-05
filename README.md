@@ -89,9 +89,4 @@ runtime实现导航栏封装，无需继承，动态提供属性控制导航栏�
     self. y_screenOrientation = UIInterfaceOrientationMaskLandscapeRight;
 }
 ```
-需要在appdelegate实现
-```
-- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-    return [[[NSUserDefaults standardUserDefaults] objectForKey:@"orientation"] integerValue];
-}
-```
+
